@@ -1273,6 +1273,10 @@ video {
     width: 18rem;
   }
 
+  .lg\:w-80 {
+    width: 20rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
