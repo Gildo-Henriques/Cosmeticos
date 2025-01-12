@@ -1,0 +1,542 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="./style.css" rel="stylesheet" />
+      <title>Document</title>
+    </head>
+
+    <body>
+      <main class="flex w-full justify-center items-center flex-col">
+        <!-- HERO SECTIONS -->
+        <!-- HEDER -->
+        <header
+          class="w-full px-5 justify-between lg:px-20 flex shadow-md items-center h-16 bg-white fixed z-20 top-0"
+        >
+          <!-- Navbar -->
+          <nav class="flex items-center space-x-5">
+            <!-- LOGO -->
+            <div class="">
+              Radiante
+            </div>
+            <ul
+              class="flex lg:flex-row flex-col lg:static fixed lg:pt-0 pt-20 px-5 -right-full bg-white top-0 gap-5 lg:h-auto h-screen lg:w-auto w-3/5 transition-all duration-200"
+              id="Navbar"
+            >
+              <a href="" class="flex justify-between items-center">
+                <li>HOME</li>
+                <span class="*:text-gray-600 lg:hidden flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="" class="flex justify-between items-center">
+                <li>SOBRE</li>
+                <span class="*:text-gray-600 lg:hidden flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="" class="flex justify-between items-center">
+                <li>PRODUTOS</li>
+                <span class="*:text-gray-600 lg:hidden flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="" class="flex justify-between items-center">
+                <li>FaQ</li>
+                <span class="*:text-gray-600 lg:hidden flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </ul>
+          </nav>
+          <!-- BOX SEARCH -->
+          <!-- <div class="w-full bg-black/50 space-x-5 h-screen flex justify-center fixed z-30 top-0 left-0">
+                    
+                    <div class="bg-white w-auto flex items-center self-start p-5">
+                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg></span>
+
+                             <input type="search" name="search" class="w-3/4" id="pesquisar">
+                             <input type="submit" value="Pesquisar">
+                    </div>
+                </div> -->
+          <!-- Navs -->
+          <nav
+            class="flex items-center z-10 *:text-gray-600 *:rounded-full *:p-1 *:flex *:items-center *:justify-center space-x-3"
+          >
+            <!-- search -->
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-gray-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </a>
+            <!-- LIKE -->
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-gray-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </a>
+            <!-- car -->
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-gray-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </a>
+            <!-- Open and Close navbar -->
+            <button class="lg:hidden flex" id="btnNavbar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </nav>
+        </header>
+        <section class="relative h-[600px] overflow-hidden w-full">
+          <!-- BOX-BLACK -->
+          <div
+            class="absolute bg-gradient-to-t flex items-end py-10 lg:px-20 px-5 to-transparent from-black/50 w-full h-full z-10"
+          >
+            <div class="text-white flex flex-col space-y-5">
+              <span class="lg:text-xl text-lg">Seja Bem-Vinda(o)</span>
+              <h1 class="lg:text-6xl text-5xl">
+                Find <br />
+                And Define Yourself
+              </h1>
+              <a class="bg-white text-black px-8 self-start py-3" href=""
+                >Comprar Agora</a
+              >
+            </div>
+          </div>
+          <img
+            src="./img/hero.jpg"
+            class="absolute w-full h-full object-cover"
+          />
+        </section>
+        <!-- SECTIONS -->
+        <section class="w-full 2xl:px-10 lg:px-0 flex justify-center flex-wrap lg:flex-nowrap 2xl:mt-20 lg:mt-0">
+          <article class="w-80 h-80 *:h-full *:object-cover relative *:w-full">
+            <img src="./img/com-1.jpg" class="absolute" alt="" />
+            <div class="w-full h-full absolute bg-gradient-to-t from-black/30 to-transparent flex items-center justify-center z-10">
+                <span class="bg-white text-black px-5 py-5">produtos capilares</span>
+            </div>
+          </article>
+          <article class="w-80 h-80 *:h-full *:object-cover relative *:w-full">
+            <img src="./img/com-2.jpg" class="absolute" alt="" />
+            <div class="w-full h-full absolute bg-gradient-to-t from-black/30 to-transparent flex items-center justify-center z-10">
+                <span class="bg-white text-black px-5 py-5">Loção corporal</span>
+            </div>
+          </article>
+          <article class="w-80 h-80 *:h-full *:object-cover relative *:w-full">
+            <img src="./img/com-3.jpg" class="absolute" alt="" />
+            <div class="w-full h-full absolute bg-gradient-to-t from-black/30 to-transparent flex items-center justify-center z-10">
+                <span class="bg-white text-black px-5 py-5">Produtos de mak-up</span>
+            </div>
+          </article>
+          <article class="w-80 h-80 *:h-full *:object-cover relative *:w-full">
+            <img src="./img/com-4.jpg" class="absolute" alt="" />
+            <div class="w-full h-full absolute bg-gradient-to-t from-black/30 to-transparent flex items-center justify-center z-10">
+                <span class="bg-white text-black px-5 py-5">Cremes para a pele</span>
+            </div>
+          </article>
+        </section>
+        <!-- Produtos -->
+        <div class="text-center mt-20 mb-10 space-y-3">
+          <h2 class="text-4xl font-semibold">Nossos Produtos</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- ARTICLES -->
+        <section
+          class="flex flex-wrap 2xl:gap-8 lg:gap-5 gap-5 2xl:px-20 lg:px-14 md:px-8 px-5 *:flex *:flex-col w-full justify-center"
+        >
+          <div class="w-full 2xl:w-96 lg:w-72 md:w-60 bg-white p-5 shadow-lg">
+            <img
+              class="lg:h-60 2xl:h-52 object-contain"
+              src="./img/cosmetico-1.png"
+              alt=""
+            />
+            <span class="mt-10">Aloe vera</span>
+            <div class="flex gap-5 lg:flex-row flex-col w-full justify-between">
+              <span class="text-xl">15.000AOA</span>
+              <div class="flex space-x-5">
+                <button class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+                <button class="bg-black text-white px-5 py-1">Adicionar</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full 2xl:w-96 lg:w-72 md:w-60 bg-white p-5 shadow-lg">
+            <img
+              class="lg:h-60 2xl:h-52 object-contain"
+              src="./img/cosmetico-2.jpg"
+              alt=""
+            />
+            <span class="mt-10">Aloe vera</span>
+            <div class="flex gap-5 lg:flex-row flex-col w-full justify-between">
+              <span class="text-xl">15.000AOA</span>
+              <div class="flex space-x-5">
+                <button class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+                <button class="bg-black text-white px-5 py-1">Adicionar</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full 2xl:w-96 lg:w-72 md:w-60 bg-white p-5 shadow-lg">
+            <img
+              class="lg:h-60 2xl:h-52 object-contain"
+              src="./img/cosmeticos-3.jpg"
+              alt=""
+            />
+            <span class="mt-10">Aloe vera</span>
+            <div class="flex gap-5 lg:flex-row flex-col w-full justify-between">
+              <span class="text-xl">15.000AOA</span>
+              <div class="flex space-x-5">
+                <button class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+                <button class="bg-black text-white px-5 py-1">Adicionar</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full 2xl:w-96 lg:w-72 md:w-60 bg-white p-5 shadow-lg">
+            <img
+              class="lg:h-60 2xl:h-52 object-contain"
+              src="./img/cosmetico-4.jpg"
+              alt=""
+            />
+            <span class="mt-10">Aloe vera</span>
+            <div class="flex gap-5 lg:flex-row flex-col w-full justify-between">
+              <span class="text-xl">15.000AOA</span>
+              <div class="flex space-x-5">
+                <button class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+                <button class="bg-black text-white px-5 py-1">Adicionar</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full 2xl:w-96 lg:w-72 md:w-60 bg-white p-5 shadow-lg">
+            <img
+              class="lg:h-60 2xl:h-52 object-contain"
+              src="./img/cosmetico-5.jpg"
+              alt=""
+            />
+            <span class="mt-10">Aloe vera</span>
+            <div class="flex gap-5 lg:flex-row flex-col w-full justify-between">
+              <span class="text-xl">15.000AOA</span>
+              <div class="flex space-x-5">
+                <button class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+                <button class="bg-black text-white px-5 py-1">Adicionar</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full 2xl:w-96 lg:w-72 md:w-60 bg-white p-5 shadow-lg">
+            <img
+              class="lg:h-60 2xl:h-52 object-contain"
+              src="./img/cosmetico-6.jpg"
+              alt=""
+            />
+            <span class="mt-10">Aloe vera</span>
+            <div class="flex gap-5 lg:flex-row flex-col w-full justify-between">
+              <span class="text-xl">15.000AOA</span>
+              <div class="flex space-x-5">
+                <button class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+                <button class="bg-black text-white px-5 py-1">Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FaQ -->
+        <section class="bg-white mt-20 mb-20">
+            <div class="container max-w-4xl px-6 py-10 mx-auto">
+                <h1 class="text-2xl font-semibold text-center text-gray-800 lg:text-3xl ">Perguntas frequentes</h1>
+        
+                <div class="mt-12 space-y-8">
+                    <div class="border-2 border-gray-100 rounded-lg ">
+                        <button class="flex items-center justify-between w-full p-8">
+                            <h1 class="font-semibold text-gray-700 ">How i can play for my appoinment ?</h1>
+        
+                            <span class="text-gray-400 bg-gray-200 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </button>
+        
+                        <hr class="border-gray-200 ">
+        
+                        <p class="p-8 text-sm text-gray-500 ">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?
+                        </p>
+                    </div>
+        
+                    <div class="border-2 border-gray-100 rounded-lg ">
+                        <button class="flex items-center justify-between w-full p-8">
+                            <h1 class="font-semibold text-gray-700 ">Is the cost of the appoinment covered by private health insurance?</h1>
+        
+                            <span class="text-white bg-blue-500 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+        
+                    <div class="border-2 border-gray-100 rounded-lg ">
+                        <button class="flex items-center justify-between w-full p-8">
+                            <h1 class="font-semibold text-gray-700 ">Do i need a referral?</h1>
+        
+                            <span class="text-white bg-blue-500 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+        
+                    <div class="border-2 border-gray-100 rounded-lg ">
+                        <button class="flex items-center justify-between w-full p-8">
+                            <h1 class="font-semibold text-gray-700 ">What are your opening house?</h1>
+        
+                            <span class="text-white bg-blue-500 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+        
+                    <div class="border-2 border-gray-100 rounded-lg ">
+                        <button class="flex items-center justify-between w-full p-8">
+                            <h1 class="font-semibold text-gray-700 ">What can i expect at my first consultation?</h1>
+        
+                            <span class="text-white bg-blue-500 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+      <footer class="bg-white ">
+        <div class="container flex flex-col items-center justify-between px-6 py-8 mx-auto lg:flex-row">
+            <a href="#">
+                Radiante
+            </a>
+    
+            <div class="flex flex-wrap items-center justify-center gap-4 mt-6 lg:gap-6 lg:mt-0">
+                <a href="#" class="text-sm text-gray-600 transition-colors duration-300  hover:text-blue-500 ">
+                    HOME
+                </a>
+    
+                <a href="#" class="text-sm text-gray-600 transition-colors duration-300  hover:text-blue-500 ">
+                    SOBRE
+                </a>
+    
+                <a href="#" class="text-sm text-gray-600 transition-colors duration-300  hover:text-blue-500 ">
+                    PRODUTOS
+                </a>
+                <a href="#" class="text-sm text-gray-600 transition-colors duration-300  hover:text-blue-500 ">
+                    FaQ
+                </a>
+    
+               
+            </div>
+    
+            <p class="mt-6 text-sm text-gray-500 lg:mt-0">© Copyright 2025 Radiante. </p>
+        </div>
+    </footer>
+      <script src="./script.js"></script>
+    </body>
+    </html>

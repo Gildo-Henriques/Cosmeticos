@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.openNavbar{
+    right: 0 !important;
+    transition: all;
+    transition-duration: 1s !important;
+}
